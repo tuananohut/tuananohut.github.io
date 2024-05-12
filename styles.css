@@ -1,0 +1,32 @@
+body {
+  font-family: Sans-Serif;
+  background-color: #111111ff;
+}
+
+h1, h3 {
+  color: #fff;
+}
+
+p {
+  color: #666;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; 
+}
