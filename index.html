@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +8,80 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1 style="font-size:30px;text-align:left;">TUANA NOHUT</h1>
+  <header>
+    <h1>TUANA NOHUT</h1>
+    <p class="subtitle">Graphics Programmer</p>
+    <p class="contact-info">tuananohutt@gmail.com</p>
+  </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-    
-  <p style="font-size:200%;text-align:center;">Hello, this is Tuana Nohut's personal website. </p>
-  
-  <p style="font-size:100%;text-align:center;">
-    <i>You can discover my projects. Or you can just stalk me.</i>
-  </p>
-  
-  <canvas id="introduction" width="800" height="600"></canvas>
+  <main>
+    <section class="about-me">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Tuana is a dedicated and passionate graphics programmer with a focus on computer science and computer graphics. She is currently working on fundamentals of computer graphics and rendering techniques. Tuana is committed to advancing her expertise in this field and contributing to the development of innovative graphics technologies.</p>
+      </div>
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <section class="skills-interests">
+      <div class="skills">
+        <h2>Skills</h2>
+	<ul>
+	  <li><b>Programming:</b></li>
+	  <p>C++, C, C#</p>
+          <li><b>Engine/Tools</b></li>
+	  <p>Visual Studio, Unity</p>
+	  <li><b>APIs</b></li>
+	  <p>DirectX11, WinAPI, OpenGL</p>
+	</ul>
+      </div>
+      <div class="interests">
+        <h2>Education</h2>
+        <p><b>B.Sc. Industrial Engineering, Beykoz University, Istanbul, Turkey</b> <br>(2022-still)</p>
+      </div>
+    </section>
+
+    <section class="project-gallery">
+      <h2>Projects</h2>
+      <div class="gallery">
+        <!-- Project images -->
+        <div class="gallery-item" onclick="openModal('project1')">
+          <img src="images\Engine.png" alt="Custom Engine">
+        </div>
+        <!-- Add more gallery items here -->
+      </div>
+    </section>
+  </main>
+
+  <div id="project1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('project1')">&times;</span>
+      <div class="modal-image">
+        <img src="images\Engine.png" alt="Custom Engine" />
+      </div>
+      <div class="modal-details">
+        <h3>Custom Engine</h3>
+        <p>I am learning rendering techniques with DirectX11.</p>
+	<p>Check my work:</p>
+	<a href="https://youtube.com/playlist?list=PLXrxdHvhMCuDurn_0heADnFvAuU0MJ2qA&si=ySpctmbEfdgCIBZp">YouTube</a>
+	<br>
+        <a href="https://github.com/tuananohut/CustomEngine" target="_blank">Source Code</a>
+	<br>
+	<a href="https://www.rastertek.com/tutdx11win10.html">Reference</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/tuana-nohut-196136278/" class="social-link">LinkedIn</a>
+      <a href="https://www.youtube.com/channel/UCNBeSNEOY48MG_F8daze-OQ" class="social-link">YouTube</a>
+      <a href="https://github.com/tuananohut" class="social-link">GitHub</a>
+      <a href="https://medium.com/@tkane_n" class="social-link">Medium</a>
+      <a href="https://twitter.com/tkane_n" class="social-link">Twitter</a>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
   
-  <div style="text-align: center;">
-    <a href="https://www.linkedin.com/in/tuana-nohut-196136278/" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">LinkedIn</a>
-    <a href="https://www.youtube.com/channel/UCNBeSNEOY48MG_F8daze-OQ" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">YouTube</a>
-    <a href="https://github.com/tuananohut" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">GitHub</a>
-    <a href="https://medium.com/@tkane_n" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">Medium</a>
-    <a href="https://twitter.com/tkane_n" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">Twitter</a>
-</div>
-
 </body>
 </html>
-
-
-
-
