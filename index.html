@@ -12,9 +12,19 @@
 
   <meta property="og:title" content="Tuana Nohut">
   <meta property="og:description" content="Portfolio of Tuana Nohut, a passionate graphics programmer focusing on computer graphics and rendering techniques.">
-  <meta property="og:image" content="https://example.com/images/Engine.png">
-  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://tuananohut.github.io/images/Engine.png">
+  <meta property="og:url" content="https://tuananohut.github.io">
   <meta property="og:type" content="website">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDZFX8V1WX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-BDZFX8V1WX');
+  </script>
 
   <title>Tuana Nohut - Graphics Programmer</title>
 
@@ -53,25 +63,66 @@
 
     <section class="project-gallery">
       <h2>Projects</h2>
+      <div>
+	<p style = "color: black; font-size: 18px;">
+	  Click on the images to explore more details. 
+	</p>
+      </div>
+
       <div class="gallery">
-        <!-- Project images -->
-        <div class="gallery-item" onclick="openModal('project1')">
-          <img src="images/Engine.png" alt="Custom Engine Project by Tuana Nohut">
+	<!-- Custom Engine -->
+        <div class="gallery-item" onclick="openModal('CustomEngine')">
+          <img src="images/Engine/Engine_08.png" alt="Custom Engine Project by Tuana Nohut">
         </div>
-        <!-- Add more gallery items here -->
+
+	<!-- Visualizing Traveling Salesperson -->
+        <div class="gallery-item" onclick="openModal('VisualizingTravelingSalesperson')">
+	  <img src="images/traveling_salesperson.png" alt="Visualizing Traveling Salesperson by Tuana Nohut">
+	</div>
+	
+	<!-- Simple Particle System -->
+	<div class="gallery-item" onclick="openModal('SimpleParticleSystem')">
+	  <img src="images/particle.png" alt="Simple Particle System by Tuana Nohut">
+	</div>
+	
       </div>
     </section>
   </main>
 
-  <div id="project1" class="modal">
+  <div id="CustomEngine" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('project1')">&times;</span>
+      <span class="close" onclick="closeModal('CustomEngine')">&times;</span>
       <div class="modal-image">
-        <img src="images/Engine.png" alt="Custom Engine by Tuana Nohut">
+	<div class = "slideshow-container">
+          <img class = "mySlides" src="images/Engine/Engine_08.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_01.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_02.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_03.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_04.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_05.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_06.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_07.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_09.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_10.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_11.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_12.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_13.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_14.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_15.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_16.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_17.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_18.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_19.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_20.png" alt="Custom Engine by Tuana Nohut">
+	  <img class = "mySlides" src="images/Engine/Engine_21.png" alt="Custom Engine by Tuana Nohut">
+	</div>
+	<button class = "prev" onclick="plusSlides(-1)">&#10094;</button>
+	<button class = "next" onclick="plusSlides(1)">&#10095;</button>
       </div>
       <div class="modal-details">
         <h3>Custom Engine</h3>
-        <p>I am learning rendering techniques with DirectX11.</p>
+        <p>I am learning rendering techniques with DirectX11. You can follow my progress on LinkedIn, GitHub or YouTube. Also you can check the other images.</p>
         <p>Check my work:</p>
         <a href="https://youtube.com/playlist?list=PLXrxdHvhMCuDurn_0heADnFvAuU0MJ2qA&si=ySpctmbEfdgCIBZp" target="_blank">YouTube</a><br>
         <a href="https://github.com/tuananohut/CustomEngine" target="_blank">Source Code</a><br>
@@ -79,7 +130,40 @@
       </div>
     </div>
   </div>
+  
+  <div id="VisualizingTravelingSalesperson" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('VisualizingTravelingSalesperson')">&times;</span>
+      <div class="modal-image">
+        <img src="images/traveling_salesperson.png" alt="Visualizing Traveling Salesperson by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Visualizing Traveling Salesperson</h3>
+        <p>I visualized traveling salesperson algorithm. I used SFML and C++. You can look at references from GitHub readme.md file. Click "Source Code" for this.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/nqyQTMZwQA8?si=VSeB0KNUMo5zTRPr" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/traveling-salesperson" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
 
+  <div id="SimpleParticleSystem" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('SimpleParticleSystem')">&times;</span>
+      <div class="modal-image">
+        <img src="images/particle.png" alt="Simple Particle System by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Simple Particle System</h3>
+        <p>I made a simple smoke simulation. I used SFML and C++.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/wW0GMuNqeJ4?si=YPN0PwxymUhNhwdQ" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Simple-Particle-System" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  
   <footer>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/tuana-nohut-196136278/" class="social-link" target="_blank">LinkedIn</a>

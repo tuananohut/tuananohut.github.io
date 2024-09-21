@@ -241,3 +241,72 @@ footer:hover {
   background-color: #002244;
   transform: translateY(-2px);
 }
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.mySlides.show {
+    display: block;
+    opacity: 1;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  border: none;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.prev {
+    left: 16px;
+}
+
+.next {
+  right: 16px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%)  scale(1.2);
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover, .close:focus {
+  color: #f44336; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-image {
+    position: relative;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
