@@ -16,9 +16,15 @@ window.onclick = function (event) {
 
 let slideIndexCircle = 0;
 let slideIndexEngine = 0;
+let slideIndexFlocking = 0;
+let slideIndexVisualizingMath = 0;
+let slideIndexPydewValley = 0;
 
 showSlidesCircle(slideIndexCircle);
 showSlidesEngine(slideIndexEngine);
+showSlidesFlocking(slideIndexFlocking);
+showSlidesVisualizingMath(slideIndexVisualizingMath);
+showSlidesPydewValley(slideIndexPydewValley);
 
 function plusSlidesCircle(n) {
     showSlidesCircle(slideIndexCircle += n);
@@ -46,4 +52,46 @@ function showSlidesEngine(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndexEngine].style.display = "block";
+}
+
+function plusSlidesFlocking(n) {
+    showSlidesFlocking(slideIndexFlocking += n);
+}
+
+function showSlidesFlocking(n) {
+    let slides = document.getElementsByClassName("mySlidesFlocking");
+    if (n >= slides.length) { slideIndexFlocking = 0; }
+    if (n < 0) { slideIndexFlocking = slides.length - 1; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndexFlocking].style.display = "block";
+}
+
+function plusSlidesVisualizingMath(n) {
+    showSlidesVisualizingMath(slideIndexVisualizingMath += n);
+}
+
+function showSlidesVisualizingMath(n) {
+    let slides = document.getElementsByClassName("mySlidesVisualizingMath");
+    if (n >= slides.length) { slideIndexVisualizingMath = 0; }
+    if (n < 0) { slideIndexVisualizingMath = slides.length - 1; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndexVisualizingMath].style.display = "block";
+}
+
+function plusSlidesPydewValley(n) {
+    showSlidesPydewValley(slideIndexPydewValley += n);
+}
+
+function showSlidesPydewValley(n) {
+    let slides = document.getElementsByClassName("mySlidesPydewValley");
+    if (n >= slides.length) { slideIndexPydewValley = 0; }
+    if (n < 0) { slideIndexPydewValley = slides.length - 1; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndexPydewValley].style.display = "block";
 }

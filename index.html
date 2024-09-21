@@ -16,16 +16,6 @@
   <meta property="og:url" content="https://tuananohut.github.io">
   <meta property="og:type" content="website">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDZFX8V1WX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-BDZFX8V1WX');
-  </script>
-
   <title>Tuana Nohut - Graphics Programmer</title>
   
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -57,7 +47,7 @@
       </div>
       <div class="interests">
         <h2>Education</h2>
-        <p><b>B.Sc. Industrial Engineering, Beykoz University, Istanbul, Turkey</b> <br>(2022-present)</p>
+        <p style = "font-size:18px;"><b>B.Sc. Industrial Engineering, Beykoz University, Istanbul, Turkey</b> <br>(2022-present)</p>
       </div>
     </section>
 
@@ -75,6 +65,11 @@
           <img src="images/Engine/Engine_08.png" alt="Custom Engine Project by Tuana Nohut">
         </div>
 
+	<!-- Pydew Valley -->
+	<div class="gallery-item" onclick="openModal('Pydew Valley')">
+	  <img src="images/PydewValley/pydewvalley.png" alt="Stardew Valley Clone by Tuana Nohut">
+	</div>
+	
 	<!-- Visualizing Traveling Salesperson -->
         <div class="gallery-item" onclick="openModal('VisualizingTravelingSalesperson')">
 	  <img src="images/traveling_salesperson.png" alt="Visualizing Traveling Salesperson by Tuana Nohut">
@@ -98,6 +93,46 @@
 	<!-- Drawing Circles with Recursion -->
 	<div class="gallery-item" onclick="openModal('CircleRecursion')">
 	  <img src="images/Recursion/recursion.png" alt="Drawing Circles with Recursion by Tuana Nohut">
+	</div>
+
+	<!-- Spring Forces -->
+	<div class="gallery-item" onclick="openModal('SpringForces')">
+	  <img src="images/spring_forces.png" alt="Spring Forces by Tuana Nohut">
+	</div>
+
+	<!-- Flocking Simulation -->
+	<div class="gallery-item" onclick="openModal('FlockingSimulation')">
+	  <img src="images/Flocking_Simulation/flocking_simulation.png" alt="Flocking Simulation by Tuana Nohut">
+	</div>
+
+	<!-- Graphing Perlin Noise -->
+	<div class="gallery-item" onclick="openModal('PerlinNoise')">
+	  <img src="images/perlin_noise.png" alt="Graphing Perlin Noise by Tuana Nohut">
+	</div>
+
+	<!-- Visualizing Math -->
+	<div class="gallery-item" onclick="openModal('VisualizingMath')">
+	  <img src="images/Visualizing_Math/visualizing_math.png" alt="Visualizing Math by Tuana Nohut">
+	</div>
+	
+	<!-- Shoot The Shapes -->
+	<div class="gallery-item" onclick="openModal('ShootTheShapes')">
+	  <img src="images/shoot_the_shapes.png" alt="Shoot The Shapes by Tuana Nohut">
+	</div>
+
+	<!-- Tetris -->
+	<div class="gallery-item" onclick="openModal('Tetris')">
+	  <img src="images/tetris.png" alt="Tetris Clone by Tuana Nohut">
+	</div>
+
+	<!-- Pong -->
+	<div class="gallery-item" onclick="openModal('Pong')">
+	  <img src="images/pong.png" alt="Pong Clone by Tuana Nohut">
+	</div>
+
+	<!-- Solar System 2D -->
+	<div class="gallery-item" onclick="openModal('SolarSystem')">
+	  <img src="images/solarsystem2d.png" alt="Solar System 2D by Tuana Nohut">
 	</div>
 	
       </div>
@@ -247,6 +282,181 @@
         <p>I learned recursion with this project!</p>
         <p>Check my work:</p>
         <a href="https://github.com/tuananohut/Drawing-Circles-with-Recursion" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="SpringForces" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('SpringForces')">&times;</span>
+      <div class="modal-image">
+        <img src="images/spring_forces.png" alt="Spring Forces by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Spring Forces</h3>
+        <p>I wrote a simple pendulum and spring code in SFML.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/TKZr7178US4" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Spring-Forces-SFML" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="FlockingSimulation" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('FlockingSimulation')">&times;</span>
+      <div class="modal-image">
+        <div class="slideshow-container">
+          <img class="mySlidesFlocking" src="images/Flocking_Simulation/flocking_simulation.png" alt="Flocking Simulation by Tuana Nohut">
+          <img class="mySlidesFlocking" src="images/Flocking_Simulation/flocking_simulation_01.png" alt="Drawing Circles with Recursion by Tuana Nohut">
+        </div>
+        <button class="prev" onclick="plusSlidesFlocking(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlidesFlocking(1)">&#10095;</button>
+      </div>
+      <div class="modal-details">
+        <h3>Flocking Simulation</h3>
+        <p>This is a flocking simulation. I used SFML and C++.</p>
+        <p>Check my work:</p>
+	<a href="https://youtu.be/e7WxNZbxggs?si=vYFcbT8S5t950qdn" target="_blank">YouTube - Black and White</a><br>
+	<a href="https://youtu.be/SjnZw9wFwO8?si=SPj4jDEAlIt4fA5C" target="_blank">YouTube - Colorful</a><br>	
+        <a href="https://github.com/tuananohut/Flocking-Simulation" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="PerlinNoise" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('PerlinNoise')">&times;</span>
+      <div class="modal-image">
+        <img src="images/perlin_noise.png" alt="Graphing Perlin Noise by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Graphing Perlin Noise</h3>
+        <p>I learned perlin noise algorithm and I created waves with perlin noise.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/xSdBC9wOSz0" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Graphing-Perlin-Noise-1D" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="VisualizingMath" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('VisualizingMath')">&times;</span>
+      <div class="modal-image">
+        <div class="slideshow-container">
+          <img class="mySlidesVisualizingMath" src="images/Visualizing_Math/visualizing_math.png" alt="Visualizing Math by Tuana Nohut">
+          <img class="mySlidesVisualizingMath" src="images/Visualizing_Math/visualizing_math_01.png" alt="Visualizing Math by Tuana Nohut">
+	  <img class="mySlidesVisualizingMath" src="images/Visualizing_Math/visualizing_math_02.png" alt="Visualizing Math by Tuana Nohut">
+	  <img class="mySlidesVisualizingMath" src="images/Visualizing_Math/visualizing_math_03.png" alt="Visualizing Math by Tuana Nohut">
+        </div>
+        <button class="prev" onclick="plusSlidesVisualizingMath(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlidesVisualizingMath(1)">&#10095;</button>
+      </div>
+      <div class="modal-details">
+        <h3>Visualizing Math</h3>
+        <p>I visualized mathematical functions in Unity.</p>
+        <p>Check my work:</p>
+	<a href="https://youtube.com/playlist?list=PLXrxdHvhMCuB9xStEw5fY3mhtqFjA0Hci&si=V4LU8d3KzTCir-Z7" target="_blank">YouTube</a><br>	
+        <a href="https://github.com/tuananohut/Visualizing-Math" target="_blank">Source Code - 1D Visualization</a><br>
+	<a href="https://github.com/tuananohut/Visualizing-Math-2" target="_blank">Source Code - 2D Visualization</a><br>
+	<a href="https://github.com/tuananohut/Visualizing-Math-3" target="_blank">Source Code - 3D Visualization</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="ShootTheShapes" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('ShootTheShapes')">&times;</span>
+      <div class="modal-image">
+        <img src="images/shoot_the_shapes.png" alt="Shoot The Shapes by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Shoot The Shapes</h3>
+        <p>This is Shoot The Shapes. Shoot The Shapes is my first game in C++. This game is about shooting the shapes!</p>
+	<h4>What Did I Learn This Project?</h4>
+	<ul>
+	  <li>Entity Component System</li>
+	  <li>Factory Design Pattern</li>
+	  <li>SFML</li>
+	  <li>Memory allocation</li>
+	  <li>Smart pointers</li>
+	  <li>Dynamic arrays</li>
+	  <li>File management</li>
+	  <li>Modern C++</li>
+	</ul>
+        <p>Check my work:</p>
+        <a href="https://github.com/tuananohut/shoot-the-shapes" target="_blank">Source Code</a><br>
+	<a href="https://www.linkedin.com/posts/tuana-nohut-196136278_sfml-cpp-cplusplus-activity-7119013876691578880-of__?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn - Video</a><br>	
+      </div>
+    </div>
+  </div>
+
+  <div id="Tetris" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('Tetris')">&times;</span>
+      <div class="modal-image">
+        <img src="images/tetris.png" alt="Tetris Clone by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Tetris</h3>
+        <p>This is tetris clone.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/BikR5HZnKiw" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Tetris" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+  
+  <div id="Pong" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('Pong')">&times;</span>
+      <div class="modal-image">
+        <img src="images/pong.png" alt="Pong Clone by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Pong</h3>
+        <p>This is pong clone.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/LFKVBaVG3yY" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Pong" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="SolarSystem" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('SolarSystem')">&times;</span>
+      <div class="modal-image">
+        <img src="images/solarsystem2d.png" alt="Solar System 2D by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Solar System 2D</h3>
+        <p>This is 2D solar system simulation.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/-GN2rE0cNx0" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Solar-System-2D" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="Pydew Valley" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('Pydew Valley')">&times;</span>
+      <div class="modal-image">
+        <div class="slideshow-container">
+          <img class="mySlidesPydewValley" src="images/PydewValley/pydewvalley.png" alt="Stardew Valley Clone by Tuana Nohut">
+          <img class="mySlidesPydewValley" src="images/PydewValley/pydewvalley_01.png" alt="Stardew Valley Clone by Tuana Nohut">
+        </div>
+        <button class="prev" onclick="plusSlidesPydewValley(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlidesPydewValley(1)">&#10095;</button>
+      </div>
+      <div class="modal-details">
+        <h3>Pydew Valley</h3>
+        <p>This is Pydew Valley. Pydew Valley is a clone of Stardew Valley. This game is a type of farming simulation. I made this with Pygame.</p>
+        <p>Check my work:</p>
+	<a href="https://www.linkedin.com/posts/tuana-nohut-196136278_kar%C5%9F%C4%B1n%C4%B1zda-stardew-valley-oyunundan-esinlenerek-activity-7103710678003163136-yrwp?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn - Video</a><br>	
+        <a href="https://github.com/tuananohut/pydew_valley" target="_blank">Source Code</a><br>
       </div>
     </div>
   </div>
