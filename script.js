@@ -1,11 +1,11 @@
 function openModal(modalId) {
   var modal = document.getElementById(modalId);
-  modal.style.display = "flex"; // Show the modal as a flex container
+  modal.style.display = "flex";
 }
 
 function closeModal(modalId) {
   var modal = document.getElementById(modalId);
-  modal.style.display = "none"; // Hide the modal
+  modal.style.display = "none";
 }
 
 window.onclick = function (event) {
@@ -14,19 +14,36 @@ window.onclick = function (event) {
   }
 };
 
-let slideIndex = 0;
-showSlides(slideIndex);
+let slideIndexCircle = 0;
+let slideIndexEngine = 0;
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+showSlidesCircle(slideIndexCircle);
+showSlidesEngine(slideIndexEngine);
+
+function plusSlidesCircle(n) {
+    showSlidesCircle(slideIndexCircle += n);
 }
 
-function showSlides(n) {
-    let slides = document.getElementsByClassName("mySlides");
-    if (n >= slides.length) {slideIndex = 0} 
-    if (n < 0) {slideIndex = slides.length - 1} 
+function showSlidesCircle(n) {
+    let slides = document.getElementsByClassName("mySlidesCircle"); 
+    if (n >= slides.length) { slideIndexCircle = 0; }
+    if (n < 0) { slideIndexCircle = slides.length - 1; }
     for (let i = 0; i < slides.length; i++) {
-	slides[i].style.display = "none";  
+        slides[i].style.display = "none";
     }
-    slides[slideIndex].style.display = "block";  
+    slides[slideIndexCircle].style.display = "block";
+}
+
+function plusSlidesEngine(n) {
+    showSlidesEngine(slideIndexEngine += n);
+}
+
+function showSlidesEngine(n) {
+    let slides = document.getElementsByClassName("mySlidesEngine");
+    if (n >= slides.length) { slideIndexEngine = 0; }
+    if (n < 0) { slideIndexEngine = slides.length - 1; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndexEngine].style.display = "block";
 }
