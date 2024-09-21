@@ -273,11 +273,12 @@ footer:hover {
 
 .prev {
     left: 16px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 .next {
   right: 16px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 3px 3px 3px 3px;
 }
 
 .prev:hover, .next:hover {

@@ -84,6 +84,21 @@
 	<div class="gallery-item" onclick="openModal('SimpleParticleSystem')">
 	  <img src="images/particle.png" alt="Simple Particle System by Tuana Nohut">
 	</div>
+
+	<!-- Trigonometry and Polar Coordinates -->
+	<div class="gallery-item" onclick="openModal('Trigonometry')">
+	  <img src="images/trigonometry.png" alt="Trigonometry and Polar Coordinates by Tuana Nohut">
+	</div>
+
+	<!-- Mathematical Roses -->
+	<div class="gallery-item" onclick="openModal('Mathematical Roses')">
+	  <img src="images/mathematical_roses.png" alt="Trigonometry and Polar Coordinates by Tuana Nohut">
+	</div>
+
+	<!-- Drawing Circles with Recursion -->
+	<div class="gallery-item" onclick="openModal('CircleRecursion')">
+	  <img src="images/Recursion/recursion.png" alt="Drawing Circles with Recursion by Tuana Nohut">
+	</div>
 	
       </div>
     </section>
@@ -163,6 +178,78 @@
     </div>
   </div>
 
+  <div id="Trigonometry" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('Trigonometry')">&times;</span>
+      <div class="modal-image">
+        <img src="images/trigonometry.png" alt="Trigonometry and Polar Coordinates by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Trigonometry Is Fun!</h3>
+        <p>I made a simple pendulum to understand trigonometry and polar coordinates.</p>
+        <p>Check my work:</p>
+        <a href="https://youtu.be/r-9fOhEAdUI" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Trigonometry-and-Polar-Coordinates" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="Mathematical Roses" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('Mathematical Roses')">&times;</span>
+      <div class="modal-image">
+        <img src="images/mathematical_roses.png" alt="Trigonometry and Polar Coordinates by Tuana Nohut">
+      </div>
+      <div class="modal-details">
+        <h3>Mathematical Roses</h3>
+        <p>This a rose drawing application. What is a rose? A rose is the set of points in polar coordinates specified by the polar equation.</p>
+	
+	<div class="polar-equation">
+          <p><strong>Polar Equations:</strong></p>
+          <p>
+            x = r * cos(k * a)<br>
+            y = r * sin(k * b)<br>
+            k = n/d
+          </p>
+	</div>
+	
+	<div class="interaction">
+          <p>
+            When you run the program, you can change the <span style="color: red;">n</span> and <span style="color: blue;">d</span> values to draw any shape from the picture below. 
+            Press <span style="color: red;">n</span> to increase the red values and <span style="color: blue;">d</span> to increase the blue values.
+        </p>
+	  </div>
+	
+	<div class="references">
+	  <p>For more information, you can check the references.</p>
+	</div>
+	
+        <p>Check my work:</p>
+        <a href="https://youtu.be/vepaVo9sTKY" target="_blank">YouTube</a><br>
+        <a href="https://github.com/tuananohut/Mathematical-Roses" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="CircleRecursion" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('CircleRecursion')">&times;</span>
+      <div class="modal-image">
+	<div class = "slideshow-container">
+          <img class = "mySlides" src="images/Recursion/recursion.png" alt="Drawing Circles with Recursion by Tuana Nohut">
+	  <img class = "mySlides" src="images/Recursion/recursion_01.png" alt="Drawing Circles with Recursion by Tuana Nohut">
+	</div>
+	<button class = "prev" onclick="plusSlides(-1)">&#10094;</button>
+	<button class = "next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      <div class="modal-details">
+        <h3>Drawing Circles with Recursion</h3>
+        <p>I learned recursion with this project!</p>
+        <p>Check my work:</p>
+        <a href="https://github.com/tuananohut/Drawing-Circles-with-Recursion" target="_blank">Source Code</a><br>
+      </div>
+    </div>
+  </div>
   
   <footer>
     <div class="social-links">
@@ -172,6 +259,9 @@
       <a href="https://medium.com/@tkane_n" class="social-link" target="_blank">Medium</a>
       <a href="https://twitter.com/tkane_n" class="social-link" target="_blank">Twitter</a>
     </div>
+    <div class="copyright">
+         <p>Copyright © 2024 Tuana Nohut. All rights reserved.</p>
+      </div>
   </footer>
 
   <script src="script.js"></script>
