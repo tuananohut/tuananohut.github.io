@@ -255,14 +255,20 @@ footer:hover {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  background-color: #d81b60;
+  background-color: linear-gradient(135deg, #d81b60, #003366);
   border-radius: 20px;
   padding: 8px 15px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center; 
+}
+
+.social-link i {
+    font-size: 24px;
+    transition: transform 0.3s ease; 
 }
 
 .social-link:hover {
-  background-color: #002244;
+  background-color: linear-gradient(135deg, #d81b60, #003366);
   transform: translateY(-2px);
 }
 
